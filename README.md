@@ -1,4 +1,4 @@
-# Zoom-in-Ai-Video
+# Zoom-in Ai Video
 Love Ai video Zoom-outs? Zoom-ins are better!
 
 
