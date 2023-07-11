@@ -4,7 +4,7 @@ Love Ai video Zoom-outs? Zoom-ins are better!
 
 Convert Zoom-out Midjourney video to Zoom-in one!
 
-1. Install FFMpeg   <a href="https://ffmpeg.org/download.html" target="_blank">Install FFMpeg</a> 
+1. Install FFMpeg   <a href="https://ffmpeg.org/download.html" target="_blank">https://ffmpeg.org/download.html</a> 
 2. Run ReverseVideo2.bat `<yourvideofile>`
 <br><br>
 
