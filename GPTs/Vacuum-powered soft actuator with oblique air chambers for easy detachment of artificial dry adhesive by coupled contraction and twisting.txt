@@ -1,0 +1,705 @@
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=tsta20Science and Technology of Advanced Materials
+ISSN: (Print) (Online) Journal homepage: https://www.tandfonline.com/loi/tsta20
+Vacuum-powered soft actuator with oblique air
+chambers for easy detachment of artificial dry
+adhesive by coupled contraction and twisting
+Seung Hoon Yoo, Minsu Kim, Han Jun Park, Ga In Lee, Sung Ho Lee & Moon
+Kyu Kwak
+To cite this article:  Seung Hoon Yoo, Minsu Kim, Han Jun Park, Ga In Lee, Sung Ho Lee &
+Moon Kyu Kwak (2023) Vacuum-powered soft actuator with oblique air chambers for easy
+detachment of artificial dry adhesive by coupled contraction and twisting, Science and
+Technology of Advanced Materials, 24:1, 2274818, DOI: 10.1080/14686996.2023.2274818
+To link to this article:  https://doi.org/10.1080/14686996.2023.2274818
+© 2023 The Author(s). Published by National
+Institute for Materials Science in partnership
+with Taylor & Francis Group.
+View supplementary material 
+Published online: 09 Nov 2023.
+Submit your article to this journal 
+Article views: 381
+View related articles 
+View Crossmark data
+Vacuum-powered soft actuator with oblique air chambers for easy detachment 
+of artificial dry adhesive by coupled contraction and twisting
+Seung Hoon Yooa, Minsu Kima, Han Jun Parka, Ga In Leea, Sung Ho Leeb and Moon Kyu Kwaka
+aDepartment of Mechanical Engineering, Kyungpook National University, Daegu, Republic of Korea;  
+bDepartment of Mechanical Engineering, Dong-A University, Busan, Republic of Korea
+ABSTRACT
+A gecko foot-inspired, mushroom-shaped artificial dry adhesive exploiting intermolecular forces 
+between microstructure and surface has drawn research attention for its strong adhesive force. 
+However, the high pull-off strength corresponding to the adhesive force matters when detaching 
+fragile substrates. In this study, we report a vacuum-powered soft actuator having oblique air 
+chambers and a dry adhesive. The soft actuator performs coupled contraction and twisting by 
+applying negative pneumatic pressure inward and exhibits not only high pull-off strength but 
+also easy detachment. This effective detachment can be achieved thanks to the twisting motion 
+of the soft actuator. The detachment performances of the actuator models are assessed using 
+a 6-degrees-of-freedom robot arm. Results show that the soft actuators exhibit remarkable pull- 
+off strength decrement from ~20 N cm−2 to ~2 N cm−2 due to the twisting. Finally, to verify 
+a feasible application of this study, we utilize the inherent compliance of the actuators and 
+introduce a glass transfer system for which a glass substrate on a slope is gripped by the flexibility 
+of the soft actuators and delivered to the destination without any fracture.
+IMPACT STATEMENT
+Vacuum-powered soft actuator with oblique air chambers for easy detachment of artifi -
+cial dry adhesive by coupled contraction and twisting
+In this work, we report a vacuum-powered soft actuator with artificial dry adhesive. We used 
+a vacuum for the easy detachment of the dry adhesive and verified a feasibility for the real- 
+industrial fields. The highlights and novelty of this work are as follows:
+• Vacuum-powered soft actuator with Gecko inspired dry adhesive
+• High adhesion with an easy detachment by twisting motion
+• Mechanical analysis of the easy detachment
+• Novel glass transfer system with the 6-DOF robot arm based on the soft actuatorARTICLE HISTORY 
+Received 22 July 2023  
+Revised 25 September 2023  
+Accepted 19 October 2023 
+KEYWORDS 
+Soft actuator; dry adhesive; 
+gecko; robot arm; glass 
+transportation systems
+1.Introduction
+Gecko lizards are known for their superior ability to 
+climb vertical surfaces or even move upside down on a ceiling at speeds of up to 77 cm s−1. The key feature of 
+a gecko’s astonishing adhesion lies in the micro-setae 
+on their toes. Each micro-seta, approximately 100 μm 
+CONTACT Moon Kyu Kwak 
+ mkkwak@knu.ac.kr 
+ Department of Mechanical Engineering, Kyungpook National University, Daegu 41566, Republic of 
+Korea ; Sung Ho Lee 
+ sunghol@dau.ac.kr 
+ Department of Mechanical Engineering, Dong-A University, Busan 49315, Republic of Korea
+Supplemental data for this article can be accessed online at https://doi.org/10.1080/14686996.2023.2274818 .SCIENCE AND TECHNOLOGY OF ADVANCED MATERIALS 
+2023, VOL. 24, NO. 1, 2274818 
+https://doi.org/10.1080/14686996.2023.2274818
+© 2023 The Author(s). Published by National Institute for Materials Science in partnership with Taylor & Francis Group.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/ ), which permits 
+unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been published allow the posting 
+of the Accepted Manuscript in a repository by the author(s) or with their consent.in length and 5 μm in diameter, is formed from β- 
+keratin, and its tip branches into spatulae consisting 
+of stalks with flat triangular ends. When the setae are 
+planted on a surface, intermolecular surface forces, such 
+as the van der Waals force, are generated at the inter -
+face, which is strong enough to exceed the entire weight 
+of a lizard [1–5]. To utilize the adhesion mechanism of 
+a gecko’s foot, studies have proposed the use of mush -
+room-shaped artificial dry adhesives consisting of 
+a hierarchical bilayer comprising micropillars and tips, 
+which exhibit good adhesion, repeatability, and self- 
+cleaning capability compared to nanostructures with 
+simple spatulate tips [6–11 ]. Given these advantages, 
+glass transfer systems with dry adhesive have been 
+introduced to deliver a heavy, wide, thin glass with 
+a robot arm or a gripper [10,12–14 ]. However, the 
+high pull-off strength derived from detachment in the 
+vertical direction can damage or even fracture a fragile 
+glass substrate, such as a wide and thin liquid crystal 
+display. To detach the dry adhesive with low pull-off 
+strength, the application of shear force on the interface 
+has been introduced [15–20 ]. This method decreases 
+the pull-off strength, as it induces a peeling effect of the 
+micropillars and reduces the real contact area of the 
+attached glass. Inspired by this principle, a novel 
+detachment method has been introduced, which exerts 
+shear force on the interface by twisting the dry adhesive, 
+thus generating a low pull-off strength that is approxi -
+mately half to the detachment in the vertical direc -
+tion [21].
+These days, research in terms of ‘robotics’ have 
+been actively carried out with the development of 
+software such as artificial intelligence (AI) and 
+machine learning (ML), and various studies related 
+to ‘soft robots’ have also been conducted. Unlike con-
+ventional robots for routine practices with restricted 
+environment, soft robots feature versatile shape defor -
+mation and high adaptability in various environments 
+[22–25 ]. Furthermore, unlike conventional hard 
+robots constructed with barely deformable substances, 
+such as metal and aluminum alloy, soft robots deform 
+themselves and exhibit a wide range of motions, such 
+as swimming, crawling, and galloping, in response to 
+their inherent compliance with their base materials 
+[26–30 ]. Among soft robots, a soft pneumatic actuator 
+is one of the popular actuating methods. It is generally 
+fabricated using flexible materials, such as silicone 
+rubber, and typically includes embedded monolithic 
+air network with multiply connected air chambers. By 
+applying pneumatic pressure on the network, the 
+actuator can perform complex motions such as exten -
+sion, contraction, bending, and twisting [31–37 ]. 
+Utilizing these smart actuators, research have been 
+conducted to grip and convey smooth glasses [38– 
+40] in recent years. However, rupture of the glass 
+owing to excessive pull-off force was not sincerely 
+considered in the previous studies yet.In this study, we report a vacuum-powered soft 
+actuator with the mushroom-shaped artificial dry 
+adhesive, as shown in Figure 1. The actuator exhibits 
+not only strong adhesion but also easy detachment 
+with glass and contains oblique air chambers that 
+can be deformed easily by controlling air pressure. 
+Several models focusing on the influence of the angle 
+of air chambers and dimension were demonstrated 
+through a characteristic equation governing the design 
+of the actuators, and prototypes were fabricated with 
+the dry adhesive using soft lithography. The perfor -
+mances of the actuator models, such as high pull-off 
+strength and easy detachment, were verified with 
+a 6-degrees-of-freedom (6-DOF) robot arm. Then, 
+the results were compared with previous soft glass 
+grippers focusing on pull-off force and its switching. 
+Finally, a novel glass transfer system that can attach 
+a tilted glass by bending and safely detach after deliv -
+ery was also introduced as a feasible application.
+2.Experimental sections
+2.1. Fabrication of the artificial dry adhesive 
+inspired by the gecko foot
+The gecko-inspired, mushroom-shaped artificial dry 
+adhesive was fabricated through conventional soft 
+lithography with polydimethylsiloxane (PDMS) 
+(Figure S1) [7]. First, the elastomer base and curing 
+agent (Sylgard 184 kit, Dow Corning Corp, U.S.A.) 
+were mixed in a ratio of 10:1, and the PDMS mixture 
+was degassed to remove air bubbles in the vacuum 
+chamber. Then, the degassed PDMS mixture was 
+poured onto a master mold with mushroom-shaped 
+microstructures and cured in a 70°C oven for 2 h. The 
+cured PDMS was carefully demolded from the master 
+mold (Supplementary Figures S1(a–c)). The total 
+thickness of the sample was controlled at ~2 mm, 
+and each micropillar had a height of 20 μm, diameter 
+of 10 μm, tip thickness of 1 μm, and tip diameter of 13  
+μm. The pillar arrays were arrayed in a hexagonal 
+pattern 20 μm away from each pillar’s center.
+2.2. Preparation of the vacuum-powered soft 
+actuator
+Vacuum-powered soft actuator models were fabri -
+cated by employing a simple process of soft litho -
+graphy depicted in Supplementary Figure S2. The 
+mold for the soft actuator body was produced by 
+a digital light processing-type 3D printer with ultra -
+violet light-curable resin and overcured for 12 h after 
+printing to increase the solidity of the molds 
+(Supplementary Figures S2(a-i)). Then, the left and 
+right parts of the mold were slightly joined together, 
+and the degassed PDMS mixture was poured on it 
+(Supplementary Figure S2(a-ii)). After an additional Sci. Technol. Adv. Mater. 24 (2023) 2                                                                                                                                                     S. H. YOO et al.30 minutes of deaeration, the mold was completely 
+assembled and cured in the 70°C oven for 2 h 
+(Supplementary Figure S2(a-iii)). Half of the soft 
+actuator body was fabricated through this process, 
+and it was repeated for the other. The fabricated two 
+halves were assembled back-to-back, and the actua -
+tor body was completely fabricated (Supplementary 
+Figures S2a(iv and v)). Finally, by firmly bonding the 
+artificial dry adhesive with a 1.7-mm-thick thin glass 
+(weight: 12 g) on the top of the soft actuator, the 
+preparation of the vacuum-powered soft actuator 
+was finished (Supplementary Figure S2(b)).
+2.3. Experimental setup with a 6-DOF robot arm
+The detachment experiments of the soft actuator mod -
+els were conducted to measure the generated pull-off 
+strength using custom-built equipment. A 6-DOF 
+robot arm (MZ07, Nachi, Japan), actuator models, an 
+Arduino-based pneumatic pump kit, and load cell sensors on which a glass was fixed were prepared for 
+the tests. In all experiments, the soft actuator was 
+assembled with the robot arm and was in contact 
+conformally with the glass. At first, after a preload of 
+5 N cm−2 was given to the dry adhesive by the robot 
+arm before the initiation of each implement 
+(Supplementary Figure S3(a)), the robot arm lifted 
+the glass with a velocity of 0.5 mm s−1 to apply 
+a normal force in a vertical direction on the interface 
+between the dry adhesive and glass (Supplementary 
+Figure S3(b)). Second, the soft actuator was operated 
+by applying negative pneumatic pressure by the pump 
+kit after 1 s from the initiation to induce contraction 
+and twisting on the interface at the same time 
+(Supplementary Figures S3(c,d)). During the experi -
+ment, pull-off strength and applied negative air pres-
+sure were evaluated simultaneously with a sampling 
+time interval of 100 ms. Through 10 iterations, the 
+average value was obtained and then used in the 
+experimental data. If the dry adhesive was successfully 
+Figure 1. Concept of vacuum-powered soft actuator and its operation. (a) Combination of the actuator and mushroom-shaped 
+artificial dry adhesive attached to a glass. (b) Complex motions of the actuator with the detachment of micropillars by vacuum 
+pneumatic pressure. (c) A photograph of circular dry adhesive specimen with SEM image of micropillars. The scale bar is 20 μm. (d) 
+Actuating of the soft actuator according to negative pressures: (i) 0 kPa, (ii) −5 kPa, (iii) −10 kPa, and (iv) −15 kPa.Sci. Technol. Adv. Mater. 24 (2023) 3                                                                                                                                                     S. H. YOO et al.detached by the actuation, the measurements were 
+repeated after increasing its diameter. Otherwise, the 
+model was excluded from further measurements.
+3.Results and discussion
+3.1. Design of the soft actuator
+The soft actuator in this article was based on finger- 
+shaped structures, and the artificial dry adhesive having 
+a strong adhesion was assembled at the end of the soft 
+actuator. Figure 1 provides an overview of the entire soft 
+actuator. As depicted in Figure 1(a,b) , once the pneu -
+matic force is applied to the soft actuator, a twisting 
+motion of the soft actuator is induced, and torque is 
+generated. The dry adhesive is composed of hierarchical 
+microstructures resembling a ‘mushroom’ shape, and 
+according to the literature, a twisting motion facilitates 
+the easy detachment of dry adhesive [21]. Therefore, easy 
+detachment of the dry adhesive can be achieved using the 
+twisting motion. This facile mechanism would be 
+explained later in detail. First of all, to select the base 
+material for the soft actuator, a consideration of stiffness 
+was needed. Due to the high adhesion of the dry adhe -
+sive, high stress must be exerted from soft pneumatic 
+actuators to detach the artificial dry adhesive [7]. Given 
+that PDMS features higher stiffness (Young’s modulus =  
+~1.8 MPa) compared to EcoFlex (Young’s modulus =  
+~0.1 MPa), which is a well-established silicone elastomer 
+for soft pneumatic actuators, the PDMS was selected as 
+the base material in this study [41].
+The next part is about the twisting motion of the 
+soft actuator, which is the key feature of this study. As 
+Mosadegh’s work demonstrated [31], a finger-shaped 
+actuator with an integrated pneumatic system consist -
+ing of a single main channel and air chambers exhibits 
+bending when pneumatic pressure is internally applied. In accordance with finite element analysis 
+and the experimental results found in the literature, 
+the soft pneumatic actuators with oblique air cham -
+bers could exhibit coupled bending and twisting 
+[34,42]. Furthermore, the overlapped arrays of equiva -
+lent air chambers achieve a higher twisting angle com -
+pared to the arrays located side by side [33]. From 
+these backgrounds, each soft actuator model is 
+designed to be overlapped by the same halves, embed 
+a pneumatic network with oblique air chambers, and 
+generate normal force and torque derived from 
+coupled contraction and twisting when negative pneu -
+matic pressure is applied. As shown in Figures 1(d), 
+the soft actuator has successfully shown various twist -
+ing motions according to the pressure.
+Figure 2 shows the whole information of the soft 
+actuator and various design parameters in detail. In 
+particular, Figure 2(a) presents the finger shape with 
+a cross-sectional area of 20 mm × 20 mm and height of 
+100 mm. As can be seen, each actuator has a space for 
+a main void in the middle of the structure and air 
+chambers of oblique shape. The same halves of the 
+actuator are stacked together to offset bending and 
+induce twisting when pneumatic pressure is applied 
+inward. Other fixed design parameters of the actuator 
+models are as follows: the height of the air chamber 
+(h = 6 mm), the height of the main void (hO = 3 mm), 
+wall thickness between the outside part and air cham -
+ber (t = 1 mm), the width of air chamber (b = 5 mm), 
+and wall thickness between the pneumatic network 
+and outside part (t0 = 3 mm and t1 = 2 mm).
+Based on the fixed parameters, the soft actuators 
+were tuned by determining several variable para -
+meters. Figure 2(b) shows the top side of a model 
+that is visible on the inward edges of air chambers. 
+The characteristic equation that governs the geogra -
+phy of each model is as follows: 
+Figure 2. Schematic view of the design of a soft pneumatic actuator. (a) The fixed design parameters of an actuator model. (b) The 
+variable design parameters of the actuator model. (c) The proposed models with air chamber angle (i) θ = 45°, (ii) θ = 60°, and (iii) 
+θ = 75°, respectively.Sci. Technol. Adv. Mater. 24 (2023) 4                                                                                                                                                     S. H. YOO et al.2sb2N1Wtan 90� θL (1) 
+where θ is the angle of air chambers and N and s are 
+the numbers of air chambers and distance s at the 
+edge, respectively.
+To investigate the effect of angle θ, N and s were 
+determined after θ. Table 1 presents the values of s and 
+N corresponding to the specific value of θ from θ = 15° 
+to 75° at a fixed value of L = 100 mm. The designs of 
+angle θ = 0° and 90° were excluded because only con-
+traction occurred without twisting when vacuum pres-
+sure was applied [34,43]. The designs of angle values θ = 15° and 30° were also excluded as they contained 
+low numbers of N. As a result, three models of θ = 45°, 
+60°, 75° are proposed, as shown in Figure 2(c).
+3.2. Performance of the soft actuator
+The results of the pull-off strength derived from the 
+detachment experiments of the dry adhesive are 
+shown based on its diameter and on the vacuum 
+pressure applied on the models in Figure 3. The graphs 
+exhibit the curve between time and measured pull-off 
+strength of each actuator model based on the different 
+diameters of the dry adhesives (8, 9, 10, and 12 mm). 
+When the dry adhesives are lifted by the robot arm 
+following a normal direction without air actuation, the 
+pull-off strength gradually increases from zero to max -
+imum value during the detachment process and 
+returns to zero after the process is completed. The Table 1. Information for the geography of various soft 
+actuators.
+θ (degree) 75 60 45 30 15
+N (#) 8 8 7 5 2
+S (mm) 4.82 1.73 2.50 5.18 0.18
+Figure 3. Pull-off strength measurements of (a) 8, (b) 9, (c) 10, and (d) 12 mm-thick dry adhesive specimens versus time. Insets 
+correspond to the magnified graphs at the same time domain. (e) Maximum pull-off strength of dry adhesives with different 
+diameters upon detachment condition.Sci. Technol. Adv. Mater. 24 (2023) 5                                                                                                                                                     S. H. YOO et al.maximum pull-off strength was measured as ~20 
+N cm−2 for the dry adhesive with a diameter of 8 mm 
+and slightly increased by up to ~21, 23, and 26 N cm−2 
+as the diameter of the dry adhesive increases by 9, 10, 
+and 12 mm, respectively. In cases of successful detach -
+ment by air actuations, the pull-off strength gradually 
+increases to the maximum value and decreases after 
+passing the apex. As the diameter increases, the max -
+imum pull-off strength of the actuator models θ = 60° 
+and 75° increases from 1.6 to 2.0 N cm−2 and from 3.0 
+to 3.8 N cm−2, respectively, representing approxi -
+mately 8% and 15% of the normal detachment for 
+each. Meanwhile, the pull-off strength increases to 
+a certain extent and remains constant when the 
+detachment fails. The actuator model of 45° manages 
+to detach the dry adhesive of diameter 8 mm, whereas 
+the 9 mm specimen is not taken off (Figure 3(a,b )). 
+Similarly, the 60° and 75° models can detach the 10  
+mm sample but not the one of 12 mm (Figure 3(c,d )). 
+As shown in Figure 3(e), a relatively low pull-off 
+strength is measured in each case of actuation com -
+pared to the detachment without actuation. This is 
+a remarkable result, which demonstrates that easy 
+detachment could be achieved by operating the soft 
+actuator. Figure 4 shows the detailed relations between 
+pull-off strength and vacuum pressure applied to the 
+actuators in the cases of the conformal detachment of 
+the dry adhesive samples upon their diameters. The 
+pull-off strength increases steadily until the detachment as the absolute value of the applied air 
+pressure increases (Figures 4(a,c )). Moreover, for the 
+same actuator model, lower air pressure is required to 
+detach the dry adhesive as its diameter increases. 
+Although both 60° and 75° models can detach the 8, 
+9, and 10 mm samples, a higher value of the applied air 
+pressure is required for the 75° model to detach the 
+dry adhesive compared to the 60° model. In detail, the 
+75° model successfully detached the 10 mm sample at 
+the pressure of 31 kPa, while the 60° model demanded 
+18 kPa.
+3.3. Analysis of the easy detachment
+When vacuum pressure is applied to the soft actua -
+tors, the walls of oblique air chambers collapse 
+inward and lead to tension. The vertical and hori-
+zontal components of the tensions cause the actua -
+tors to contract and twist, thus providing the 
+interface with coupled normal stress and shear 
+stress, respectively [35,44]. As shown in 
+Figure 5(a), in two dimensions, a second-order stress 
+tensor at the center of a micropillar can be written as 
+follows: 
+σσzτxy
+τxy 0��
+στ
+τ0��
+C (2) 
+where σzσ is the normal stress in the vertical direc -
+tion, and τxyτ is the shear stress horizontal to the 
+Figure 4. Graph of the pull-off strength versus applied negative air pressure until detachment of (a) 8, (b) 9, and (c) 10 mm-thick 
+specimens.Sci. Technol. Adv. Mater. 24 (2023) 6                                                                                                                                                     S. H. YOO et al.center of a top of the micropillar applied by the 
+coupled motions. For the detachment of each micro -
+pillar, the relationship between σ and τ at the moment 
+of its detachment can be described by an equation of 
+Mohr’s circle given by: 
+σ
+2��2
+τ2R2C (3) 
+where R is the value of maximum in-plane shear stress 
+for detachment. When a pillar is detached in the 
+vertical direction without shear stress, Equation (3) 
+can be modified as follows: 
+σ0
+2��2
+R2C (4) 
+where σ0 is pull-off strength of each micropillar. By sub-
+stituting Equation (4) into (Equation 3), the relationship 
+between the σ and τ, which is required for the detachment 
+and the pull-off strength, can be described as follows: 
+σ
+2��2
+τ2σ0
+2��2
+B (5) 
+Therefore, the micropillar can be detached when the 
+complex stresses increase and reach a value exceeding 
+σ0. Figure 5(a) shows the schematic of the interface 
+between microtips and a glass after the application of 
+different twisting angles. In elastic region, shear stress 
+can be expressed by,  
+τGγ (6) 
+where G is shear modulus, and γ is shear strain.
+From equation 6, shear stress is proportional to the 
+value of shear strain. Therefore, the twisting motion results in an increase in shear stress, which leads to a 
+reduction in pull-off strength. Also, due to the increase 
+in shear stress, crack propagation was initiated (Figure 
+5(b–d) ). The crack propagates as the motions con-
+tinue, thus decreasing the pull-off strength of dry 
+adhesive, which is proportional to the number of 
+micropillars in contact with the glass [21,45]. As 
+a result, the micropillars end up with elastic bending 
+(Figure 5(e)), and the facile detachment can be 
+achieved by low pull-off strength.
+To detach the dry adhesive with the low pull-off 
+strength, shear stress applied to the dry adhesive must 
+exceed the threshold region at which the bonds rup-
+ture and detachment occurs [15,19]. As the value of 
+the chamber angle θ increases, the cross-section of the 
+air chambers increases, and it may result in the 
+increased torsional stiffness of the soft actuator [35]. 
+Thus, a relatively high magnitude of negative pneu -
+matic pressure is required for the model of angle 75° to 
+exceed the region and high pull-off strength is gener -
+ated when the dry adhesive is finally detached. In the 
+case of the model of angle 45°, despite the reduced 
+torsional stiffness, the 45° angle model exhibits lower 
+controllable adhesion energy compared to the 60° and 
+75° angle models. When the width of the air chambers 
+is normalized by the length of the side wall (cEe) 
+depicted in Figure 2(b,c ), the cEe of the 45° angle 
+model is about twice as high as the others. Perhaps, 
+this leads to the contact of the side walls having a low- 
+magnitude vacuum pressure and tensions derived 
+from the walls remaining constant [44,46]. As 
+a result, the model can exert low stress upon the dry 
+adhesive and exhibit low controllable adhesion energy.
+Figure 5. Schematic and images of micropillars in contact with a flat glass. (a) A Cartesian coordinate system and direction of stress 
+applied to the micropillar. Images of the contact areas of the micropillars with the glass after clockwise rotation by angles of (b) 5°, 
+(c) 10°, (d) 30°, and (e) 45°. The scale bar is 100 μm.Sci. Technol. Adv. Mater. 24 (2023) 7                                                                                                                                                     S. H. YOO et al.4.Application
+Based on the above experiments, a soft actuator 
+applied-glass transfer system with a 6-DOF robot arm 
+was suggested as a feasible application as shown in 
+Figure 6. In the time-lapse images, the actuator came 
+into contact with the tilted glass and picked it up by 
+adapting the 10° angle of the slope due to the flexibility 
+of the soft actuator (Figures 6(a,b )). Then, the glass was 
+lifted while attached to the dry adhesive and delivered to 
+a particular site as the robot arm moved horizontally 
+(Figures 6(c,d )). When the glass arrived on the site, it 
+was anchored on the bottom, which was coated by 
+a double-sided tape. The fix glass was detached from 
+the dry adhesive as negative air pressure was applied to 
+the actuator (Figures 6(e,f )). Through the system, the 
+glass substrate was safely transferred without fall and 
+fracture during the transfer.
+5.Conclusion
+In this study, we introduced a novel vacuum-powered 
+soft actuator featuring a dry adhesive, which can safely 
+transfer the glass substrate by coupled contraction and 
+twisting. To make these actuators, design concepts 
+containing a monolithic air channel, oblique air chambers, and back-to-back bonding were presented. 
+The dry adhesive samples underneath the actuator 
+models were attached to flat glass, and the pull-off 
+strength generated by the actuation of the models 
+was measured along with the applied air pressure.
+We present a summary of our findings below:
+(1)The vacuum-powered soft actuator was intro -
+duced. Various prototypes were suggested, and 
+the soft actuator that can be easily manipulated 
+by the negative pneumatic pressure was 
+achieved.
+(2)The facile detachment of the dry adhesive was 
+confirmed. The experiment results revealed 
+that a relatively low pull-off strength was gen-
+erated compared to the generally used vertical 
+detachment method of the artificial dry adhe -
+sive, which differed based on the chamber 
+angles of the models.
+(3)The feasible application was illustrated. On the 
+basis of (1) and (2), a novel glass transfer system 
+was proposed with the 6-DOF robot arm, and 
+its good performance was confirmed. This sys-
+tem can not only lift a tilted glass without 
+rupture but also safely deliver the glass to the 
+target area.
+Figure 6. Demonstration of the glass transfer system assembled with a robot arm, dry adhesive, and the actuator model. (a) 
+Alignment of the actuator model above a glass on a slope by a robot arm. (b) Attachment of the model on a glass while bent. (c) 
+Lifting and (d) disposition of a glass on a particular site. (e) and (f) Detachment of the glass by the twisting of the actuator model.Sci. Technol. Adv. Mater. 24 (2023) 8                                                                                                                                                     S. H. YOO et al.Through this study, the pneumatic powered soft 
+actuator with the dry adhesive, which is capable of 
+attachment with glass, is presented from the feasible 
+application perspective view. We believe that this 
+study can provide insights into the usage of the pneu -
+matic powered soft actuators as end effectors for the 
+active adhesion control of artificial dry adhesives.
+Disclosure statement
+No potential conflict of interest was reported by the 
+author(s).
+Funding
+This work was supported by the National Research 
+Foundation of Korea [Grant Nos. NRF- 
+2020R1A4A1018652 and 2019R1A2C1086766] and by the 
+SMEs Technology Development Support Project [Grant No. 
+S3052329] funded by the Korean Government.
+Author contributions
+S.H. Yoo conducted the overall experiments and wrote the 
+manuscript. M.S. Kim and H.J. Park designed and fabricated 
+the vacuum-powered soft actuator. G.I. Lee contributed to 
+the robot-arm test. S.H. Lee and M.K. Kwak supervised the 
+manuscript and the overall experiments.
+References
+[1] Autumn K, Hsieh S-T, Dudek DM, et al. Dynamics of 
+geckos running vertically. J Exp Biol. 2006 ;209 
+(2):260–272. doi: 10.1242/jeb.01980
+[2] Russell AP. The morphological basis of 
+weight-bearing in the scansors of the tokay gecko 
+(Reptilia: Sauria). Can J Zool. 1986 ;64(4):948–955. 
+doi: 10.1139/z86-144
+[3] Autumn K, Liang YA, Hsieh ST, et al. Adhesive force 
+of a single gecko foot-hair. Nature. 2000 ;405 
+(6787):681–685. doi: 10.1038/35015073
+[4] Autumn K, Peattie AM. Mechanisms of adhesion in 
+geckos. Integr Comp Biol. 2002 ;42(6):1081–1090. doi:  
+10.1093/icb/42.6.1081
+[5] Autumn K, Sitti M, Liang YA, et al. Evidence for van 
+der Waals adhesion in gecko setae. Proc Natl Acad 
+Sci. 2002 ;99(19):12252–12256. doi: 10.1073/pnas. 
+192252799
+[6] Sameoto D, Sharif H, Menon C. Investigation of 
+low-pressure adhesion performance of mushroom 
+shaped biomimetic dry adhesives. J Adhes Sci 
+Technol. 2012 ;26(23):2641–2652. doi: 10.1080/ 
+01694243.2012.701463
+[7] Yi H, Kang M, Kwak MK, et al. Simple and reliable 
+fabrication of bioinspired mushroom-shaped micro -
+pillars with precisely controlled tip geometries. ACS 
+Appl Mater Inter. 2016 ;8(34):22671–22678. doi: 10. 
+1021/acsami.6b07337
+[8] Kwak MK, Ok JG, Lee JY, et al. Continuous 
+phase-shift lithography with a roll-type mask and 
+application to transparent conductor fabrication. 
+Nanotechnology. 2012 ;23(34):344008. doi: 10.1088/ 
+0957-4484/23/34/344008[9]Greiner C, Del Campo A, Arzt E. Adhesion of bioin -
+spired micropatterned surfaces: effects of pillar 
+radius, aspect ratio, and preload. Langmuir. 2007 ;23 
+(7):3495–3502. doi: 10.1021/la0633987
+[10] Lee SH, Kim SW, Kang BS, et al. Scalable and con-
+tinuous fabrication of bio-inspired dry adhesives with 
+a thermosetting polymer. Soft Matter. 2018 ;14 
+(14):2586–2593. doi: 10.1039/C7SM02354E
+[11] Gorb S, Varenberg M, Peressadko A, et al. 
+Biomimetic mushroom-shaped fibrillar adhesive 
+microstructure. J Royal Soc Interface. 2007 ;4 
+(13):271–275. doi: 10.1098/rsif.2006.0164
+[12] Seibel A, Yıldız M, Zorlubaş B. A gecko-inspired soft 
+passive gripper. Biomimetics. 2020 ;5(2):12. doi: 10. 
+3390/biomimetics5020012
+[13] Tian H, Li X, Shao J, et al. Gecko ‐effect inspired soft 
+gripper with high and switchable adhesion for rough 
+surfaces. Adv Mater Interfaces. 2019 ;6(18):1900875. 
+doi: 10.1002/admi.201900875
+[14] Glick P, Suresh SA, Ruffatto D, et al. A soft robotic 
+gripper with gecko-inspired adhesive. IEEE Rob 
+Autom Lett. 2018 ;3(2):903–910. doi: 10.1109/LRA. 
+2018.2792688
+[15] Varenberg M, Gorb S. Shearing of fibrillar adhesive 
+microstructure: friction and shear-related changes in 
+pull-off force. J Royal Soc Interface. 2007 ;4 
+(15):721–725. doi: 10.1098/rsif.2007.0222
+[16] Wang Y, Hu H, Shao J, et al. Fabrication of 
+well-defined mushroom-shaped structures for biomi -
+metic dry adhesive by conventional photolithography 
+and molding. ACS Appl Mater Inter. 2014 ;6 
+(4):2213–2218. doi: 10.1021/am4052393
+[17] Kendall K. Thin-film peeling-the elastic term. J Phys 
+D Appl Phys. 1975 ;8(13):1449. doi: 10.1088/0022- 
+3727/8/13/005
+[18] Reddy S, Arzt E, Del Campo A. Bioinspired surfaces 
+with switchable adhesion. Adv Mater. 2007 ;19 
+(22):3833–3837. doi: 10.1002/adma.200700733
+[19] Simaite A, Temple B, Amin Karimi M, et al. 
+Understanding the influence of silicone elastomer 
+properties on wedge-shaped microstructured dry 
+adhesives loaded in shear. J Royal Soc Interface. 
+2018 ;15(146):20180551. doi: 10.1098/rsif.2018.0551
+[20] Majidi C, Groff R, Maeno Y, et al. High friction from 
+a stiff polymer using microfiber arrays. Phys Rev Lett. 
+2006 ;97(7):076103. doi: 10.1103/PhysRevLett.97. 
+076103
+[21] Kang OH, Lee SH, Yun JH, et al. Adhesion tunable 
+bio-inspired dry adhesives by twisting. Int J Precis 
+Eng Manuf. 2017 ;18(10):1433–1437. doi: 10.1007/ 
+s12541-017-0171-8
+[22] Rus D, Tolley MT. Design, fabrication and control of 
+soft robots. Nature. 2015 ;521(7553):467–475. doi: 10. 
+1038/nature14543
+[23] Whitesides GM. Soft‐Robotik. Angew Chem. 
+2018 ;130(16):4336–4353. doi: 10.1002/ange. 
+201800907
+[24] Majidi C. Soft robotics: a perspective: Current trends 
+and prospects for the future. Soft Robot. 2013 ;1 
+(1):5–11. doi: 10.1089/soro.2013.0001
+[25] Rich S, Wood R, Majidi C. Untethered soft robotics. 
+Nat Electron. 2018 ;1(2):102–112. doi: 10.1038/ 
+s41928-018-0024-1
+[26] Fan J, Wang S, Yu Q, et al. Swimming performance of 
+the frog-inspired soft robot. Soft Robot. 2020 ;7 
+(5):615–626. doi: 10.1089/soro.2019.0094Sci. Technol. Adv. Mater. 24 (2023) 9                                                                                                                                                     S. H. YOO et al.[27] Seok S, Onal CD, Cho K-J, et al. Meshworm: 
+a peristaltic soft robot with antagonistic nickel tita-
+nium coil actuators. IEEE ASME Trans Mechatron. 
+2012 ;18(5):1485–1497. doi: 10.1109/TMECH.2012. 
+2204070
+[28] Tang Y, Chi Y, Sun J, et al. Leveraging elastic instabil -
+ities for amplified performance: spine-inspired 
+high-speed and high-force soft robots. Sci Adv. 
+2020 ;6(19):eaaz6912. doi: 10.1126/sciadv.aaz6912
+[29] Cianchetti M, Calisti M, Margheri L, et al. Bioinspired 
+locomotion and grasping in water: the soft eight-arm 
+OCTOPUS robot. Bioinspir Biomim. 2015 ;10 
+(3):035003. doi: 10.1088/1748-3190/10/3/035003
+[30] Umedachi T, Vikas V, Trimmer B. Softworms: the 
+design and control of non-pneumatic, 3D-printed, 
+deformable robots. Bioinspir Biomim. 2016 ;11 
+(2):025001. doi: 10.1088/1748-3190/11/2/025001
+[31] Mosadegh B, Polygerinos P, Keplinger C, et al. 
+Pneumatic networks for soft robotics that actuate 
+rapidly. Adv Funct Mater. 2014 ;24(15):2163–2170. 
+doi: 10.1002/adfm.201303288
+[32] Alici G, Canty T, Mutlu R, et al. Modeling and experi -
+mental evaluation of bending behavior of soft pneumatic 
+actuators made of discrete actuation chambers. Soft 
+Robot. 2018 ;5(1):24–35. doi: 10.1089/soro.2016.0052
+[33] Gorissen B, Chishiro T, Shimomura S, et al. Flexible 
+pneumatic twisting actuators and their application to 
+tilting micromirrors. Sens Actuators A. 
+2014 ;216:426–431. doi: 10.1016/j.sna.2014.01.015
+[34] Wang T, Ge L, Gu G. Programmable design of soft 
+pneu-net actuators with oblique chambers can gen-
+erate coupled bending and twisting motions. Sens 
+Actuators A. 2018 ;271:131–138. doi: 10.1016/j.sna. 
+2018.01.018
+[35] Jiao Z, Ji C, Zou J, et al. Vacuum ‐powered soft pneu -
+matic twisting actuators to empower new capabilities 
+for soft robots. Adv Mater Technol. 2019 ;4 
+(1):1800429. doi: 10.1002/admt.201800429
+[36] Deshpande AR, Tse ZTH, Ren H. Origami-inspired 
+bi-directional soft pneumatic actuator with integrated 
+variable stiffness mechanism. In: International 
+Conference on Advanced Robotics (ICAR). Hong 
+Kong, China. 2017 . p. 417–421.[37] Firouzeh A, Salerno M, Paik J. Soft pneumatic actua -
+tor with adjustable stiffness layers for Multi-DoF 
+Actuation. In: IEEE/RSJ International Conference 
+on Intelligent Robots and Systems (IROS). 
+Hamburg, Germany. 2015 . p. 1117–1124.
+[38] Koivikko A, Drotlef D-M, Dayan CB, et al. 3D‐ 
+printed pneumatically controlled soft suction cups 
+for gripping fragile, small, and rough objects. Adv 
+Intell Syst. 2021 ;3(9):2100034. doi: 10.1002/aisy. 
+202100034
+[39] Song S, Drotlef D-M, Son D, et al. Suction-based soft 
+robotic gripping of rough and irregular parts. 2020 ; 
+08156. 2009.
+[40] Koivikko A, Drotlef D-M, Sitti M, et al. Magnetically 
+switchable soft suction grippers. Extreme Mech Lett. 
+2021 ;44:101263. doi: 10.1016/j.eml.2021.101263
+[41] Johnston I, McCluskey D, Tan C, et al. Mechanical 
+characterization of bulk sylgard 184 for microfluidics 
+and microengineering. J Micromech Microeng. 
+2014 ;24(3):035017. doi: 10.1088/0960-1317/24/3/035017
+[42] Sun Y, Yap HK, Liang X, et al. Stiffness customization 
+and patterning for property modulation of 
+silicone-based soft pneumatic actuators. Soft Robot. 
+2017 ;4(3):251–260. doi: 10.1089/soro.2016.0047
+[43] Tawk C, Spinks GM, In Het Panhuis M, et al. 3D 
+printable vacuum-powered soft linear actuators. In: 
+IEEE/ASME International Conference on Advanced 
+Intelligent Mechatronics (AIM). Hong Kong, China. 
+2019 . p. 50–55.
+[44] Lee J-G, Rodrigue H. Origami-based vacuum pneu -
+matic artificial muscles with large contraction ratios. 
+Soft Robot. 2019 ;6(1):109–117. doi: 10.1089/soro. 
+2018.0063
+[45] Yi H, Hwang I, Lee JH, et al. Continuous and scalable 
+fabrication of bioinspired dry adhesives via a roll-to- 
+roll process with modulated ultraviolet-curable resin. 
+ACS Appl Mater Inter. 2014 ;6(16):14590–14599. doi:  
+10.1021/am503901f
+[46] Felt W, Robertson MA, Paik J. Modeling vacuum 
+bellows soft pneumatic actuators with optimal 
+mechanical performance. In: IEEE International 
+Conference on Soft Robotics. Livorno, Italy. 2018 . p. 
+534–540.Sci. Technol. Adv. Mater. 24 (2023) 10                                                                                                                                                   S. H. YOO et al.
